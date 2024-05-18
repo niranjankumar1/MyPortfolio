@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer> </script>
+    <script src="https://kit.fontawesome.com/d7b769ab10.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!-- nav bar starts -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certificates</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- home section starts -->
+        <div id="header">
+            <div class="container special">
+                <div class="header-text">
+                    <h1>Hi<span class="im">, I'm</span><span class="name"> Niranjan Kumar</span></h1> 
+                    <p><span class="auto-input"></span></p>             
+                </div>
+                <div class="header-img">
+                    <div class="hero-img animate__animated animate__bounceInRight">
+                        <img src="images/myphoto1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- about section starts -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-c1">
+                    <div class="hero-img animate__animated animate__bounceInLeft">
+                        <img src="images/about.jpg">
+                    </div>
+                </div>
+                <div class="about-c2">
+                    <h1 class="sub-title me">About Me</h1>
+                    <p>
+                        My name is Niranjan Kumar, and I come from addanki.I have recently graduated B.tech 4th year at KL University. 
+                        As a Candidate with a strong background in Computer Science and Engineering, 
+                        Seeking a position where I can efficiently contribute my knowledge, skills and abilities 
+                        for the growth of the organization and build my professional career with dedication 
+                        and hard work.
+                        I am looking for the oppertunity to showcase and upgrade  my skills by working with the professionals.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="skii">
+                            <li class="ski">
+                                <i class="fa-brands fa-html5"></i>
+                                <p>HTML</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <p>CSS</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-brands fa-square-js"></i>
+                                <p>JavaScript</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-sharp fa-solid fa-c"></i>
+                                <p>C</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-solid fa-code"></i>
+                                <p>C++</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-brands fa-python"></i>
+                                <p>Python</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-brands fa-java"></i>
+                                <p>Java</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-solid fa-database"></i>
+                                <p>SQL</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa fa-microchip" aria-hidden="true"></i></i>
+                                <p>AI</p>
+                            </li>
+                            <li class="ski">
+                                <i class="fa-brands fa-github"></i>
+                                <p>GitHub</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li class="intern">
+                                <div class="com-head">
+                                    <h1>1Stop ai</h1>
+                                    <p>May 2022 - July 2022</p>
+                                </div>
+                                <h3>Web Developer</h3>
+                                <p>
+                                    Developed proficiency in HTML, CSS, and JavaScript during a 3-month internship at 1 Stop Raise Digital.<br>
+                                    Expanded expertise in website development and construction.<br>
+                                    Demonstrated problem-solving and collaboration skills through completion of significant projects.<br>
+                                    Actively contributed to various projects, showcasing proficiency in web development techniques.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul class="edu">
+                            <li class="four spec">
+                                <div class="upper">
+                                    <div class="imag">
+                                        <img src="images/kl.jpg">
+                                        <h4>KL University, Vijayawada</h4>
+                                    </div>
+                                    <p>2020 - 2024</p>
+                                </div>
+                                <div class="down">
+                                    <p class="e"></p>
+                                    <p>9.14 / 10</p>
+                                </div>
+                            </li>
+                            <li class="four spec">
+                                <div class="upper">
+                                    <div class="imag">
+                                        <img src="images/narayana.jpg">
+                                        <h4>Narayana Junior College, Vijayawada</h4>
+                                    </div>
+                                    <p>2018 - 2020</p>
+                                </div>
+                                <div class="down">
+                                    <p class="e"></p>
+                                    <p>9.4 / 10</p>
+                                </div>
+                            </li>
+                            <li class="four spec">
+                                <div class="upper">
+                                    <div class="imag">
+                                        <img src="images/oxford.webp">
+                                        <h4>Oxford School, Vijayawada</h4>
+                                    </div>
+                                    <p>2017 - 2018</p>
+                                </div>
+                                <div class="down">
+                                    <p class="e"></p>
+                                    <p>9.0 / 10</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- certificates section starts -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="check">
+                <div class="rotate-cert">
+                    <div class="wrap">
+                        <div class="cube">
+                            <img src="images/tf.jpg" alt="html" width="200px">
+                            <img src="images/az.jpg" alt="css" width="200px">
+                            <img src="images/wtn.jpg" alt="js" width="200px" height="200px">
+                            <img src="images/rpa.jpg" alt="java" width="200px" height="200px">
+                            <img src="images/database.jpg" alt="python" width="200px">
+                            <img src="images/oracle.webp" alt="mysql" width="200px">
+                        </div>
+                    </div>
+                </div>
+                <div class="checkk">
+                    <div class="cert-menu">
+                        <div class="cleft">
+                            <img src="images/tfl.png" height="30px">
+                            <p>TensorFlow</p>
+                        </div>
+                        <div class="cright">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="cert-menu">
+                        <div class="cleft">
+                            <img src="images/azl.png" height="30px">
+                            <p>AZ-900</p>
+                        </div>
+                        <div class="cright">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="cert-menu">
+                        <div class="cleft">
+                            <img src="images/wtnl.png" height="30px">
+                            <p>Wipro Talent Next</p>
+                        </div>
+                        <div class="cright">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="cert-menu">
+                        <div class="cleft">
+                            <img src="images/databasel.avif" height="30px">
+                            <p>Database Management System</p>
+                        </div>
+                        <div class="cright">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="cert-menu">
+                        <div class="cleft">
+                            <img src="images/oraclel.png" height="30px">
+                            <p>Oracle</p>
+                        </div>
+                        <div class="cright">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="cert-menu">
+                        <div class="cleft">
+                            <img src="images/rpal.avif" height="30px">
+                            <p>Automation Anywhere Certified(RPA)</p>
+                        </div>
+                        <div class="cright">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- project section starts  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.webp">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p> This project enables users to login with their credentials and make purchases by clicking a purchase
+                            buttons.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.avif">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p> Users will be able to login to the system using their credentials, allowing them to access various
+                            library services and features.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.avif">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+    <!-- contact section starts -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="mailto:niranjankumarkornepati@gmail.com">
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>niranjankumarkornepati@gmail.com</p>
+                    </a>
+                    <a href="Tel:+919848963255">
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>9848963255</p>
+                    </a>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kornepati.niranjankumar.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Niranja30054011" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/niranjan_kumar_.k/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/niranjankumark/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/niranjankumar1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/e934e5fedb8de5c163679a990e73172a" method="POST" target="_blank">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" id="phone" name="phone" placeholder="Phone no." required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- copyright section starts -->
+        <div class="copyright">
+            <p>Copyright © Niranjan.Made with <i class="fa-solid fa-heart"></i> by Niranjan Kumar</p>
+        </div>
+    </div>
+</body>
+</html>
